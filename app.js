@@ -43,3 +43,64 @@ function operacionSuma(){
     resultado = (numero1) + (numero2); 
     alert(`El resultado de la suma de ${numero1} + ${numero2} es ${resultado}`); 
 }
+
+/*
+Crear una función que muestre "¡Hola, mundo!" en la consola.
+*/
+function saludar(){
+    console.log("¡Hola mundo!");
+}
+saludar();
+
+/*
+Crear una función que reciba un nombre como parámetro y 
+muestre "¡Hola, [nombre]!" en la consola.
+*/
+function saludoCompleto(nombre){
+    console.log(`¡Hola, ${nombre}!`);
+}
+saludoCompleto("Nadia");
+
+/*
+Crear una función que reciba un número como parámetro y 
+devuelva el doble de ese número.
+*/
+function dobleDeUnNumero(numero){
+    let doble = parseFloat(numero * 2);
+    console.log(doble);
+    return doble;
+}
+dobleDeUnNumero(8);
+
+/*
+Crear una función que reciba tres números como parámetros 
+y devuelva su promedio.
+*/
+function obtenerPromedio(numero1Prom, numero2Prom, numero3Prom){
+    let promedio = parseInt(numero1Prom + numero2Prom + numero3Prom)/3;
+    console.log(promedio);
+    return promedio;
+
+}
+obtenerPromedio(50, 125, 125);
+
+/*
+Crear una función que reciba dos números como parámetros 
+y devuelva el mayor de ellos.
+*/
+function mayorQue(numero1MayorQue, numero2MayorQue){
+    return numero1MayorQue > numero2MayorQue ? numero1MayorQue : numero2MayorQue;
+
+}
+let numeroMayor = mayorQue(345, 987);
+console.log(numeroMayor); 
+/*
+Crear una función que reciba un número como parámetro y 
+devuelva el resultado de multiplicar ese número por sí mismo.
+*/
+function multiplicarPorSiMismo(unNumero){
+    return (unNumero * unNumero);
+}
+let multiplicacion = multiplicarPorSiMismo(10980);
+console.log(multiplicacion);
+
